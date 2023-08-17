@@ -26,6 +26,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 a {
@@ -39,37 +40,27 @@ a:hover {
 }
 
 
-h1 {
-  margin: 0;
-  text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
-}
 
-body {
-  padding: 0;
-  margin: 0;
-  width: 100vw;
-  min-height: 100vh;
-  background-position: 50% 0;
-
-  background-size: 100%;
-  color: #fff;
-  font-size: 3rem;
-  overflow: hidden;
-
-}
 
 
 
 .dix {
-  position: absolute;
-  left: 0vw;
-  top: 0vw;
-  width: 150vw;
-  height: 150vw;
+  /* position: absolute; */
+  position: fixed;
+  /* left: -20vw; */
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: calc(max(100vw, 100vh) * 1.4);
+  height: calc(max(100vw, 100vh) * 1.4);
+  translate: -15% 0;
   color: #fff;
   background: conic-gradient(hsl(0, 0%, 87%) 10deg, rgb(176, 176, 176) 40deg, #000);
-  background-size: 100% 100%;
-  animation: spin 15s linear 0s infinite normal;
+  background-position: center;
+  /* background-size: 100% 100%; */
+  animation: spin 60s linear 0s infinite normal;
   overflow: hidden;
 
 }
